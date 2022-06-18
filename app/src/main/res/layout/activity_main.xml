@@ -4,15 +4,179 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E6E3E3"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="702dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/view_menu_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital"
+            android:textColor="#292929"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:translationY="-20dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#328BE0"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="151dp"
+                android:layout_height="111dp"
+                android:layout_gravity="right"
+                android:translationX="0dp"
+                android:translationY="50dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/header_text_card"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="left"
+                android:shadowColor="#787878"
+                android:text="ngresar"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:translationX="40dp"
+                android:translationY="40dp" />
+
+            <TextView
+                android:id="@+id/header_subtext_card"
+                android:layout_width="164dp"
+                android:layout_height="60dp"
+                android:gravity="left"
+                android:text="Información de la ambulacia"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:translationX="40dp"
+                android:translationY="80dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardBackgroundColor="#61CDE9"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp">
+
+            <ImageView
+                android:id="@+id/imageView_Two"
+                android:layout_width="151dp"
+                android:layout_height="111dp"
+                android:layout_gravity="right"
+                android:translationX="0dp"
+                android:translationY="70dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/header_text_card_2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="left"
+                android:shadowColor="#787878"
+                android:text="Ingresar"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:translationX="40dp"
+                android:translationY="40dp" />
+
+            <TextView
+                android:id="@+id/header_subtext_card_2"
+                android:layout_width="164dp"
+                android:layout_height="60dp"
+                android:gravity="left"
+                android:text="información de un nuevo hospital al sistema."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:translationX="40dp"
+                android:translationY="80dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardBackgroundColor="#9BD093"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView_Tree"
+                android:layout_width="151dp"
+                android:layout_height="111dp"
+                android:layout_gravity="right"
+                android:translationX="0dp"
+                android:translationY="70dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/header_text_card_3"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="left"
+                android:shadowColor="#787878"
+                android:text="Ingresar"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:translationX="40dp"
+                android:translationY="40dp"
+
+                />
+
+            <TextView
+                android:id="@+id/header_subtext_card_3"
+                android:layout_width="164dp"
+                android:layout_height="60dp"
+                android:gravity="left"
+                android:text="información de un nuevo hospital al sistema."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:translationX="40dp"
+                android:translationY="80dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

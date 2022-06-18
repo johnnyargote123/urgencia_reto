@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/estudios/Diplomado Desarollo Movil/Reto/urgencia_reto/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable-v24/botones_redondos.xml" value="0.24" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1075" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1075" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
   </component>
