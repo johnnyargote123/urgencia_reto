@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="702dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:animateLayoutChanges="false"
+            android:scrollbarSize="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Bn_back"
+                        android:layout_width="39dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+                    <TextView
+                        android:id="@+id/Txt_Categoria_Informacion_Nuevo_Accidente"
+                        android:layout_width="260dp"
+                        android:layout_height="65dp"
+                        android:gravity="center_vertical"
+                        android:text="Informar un accidente"
+                        android:textAlignment="center"
+                        android:textColor="#505050"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <Space
+                        android:layout_width="59dp"
+                        android:layout_height="28dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/botones_redondos_4"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+
+                    tools:srcCompat="@drawable/ic_icono_reto_ambulancia_04" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nuevo accidente"
+                    android:textAlignment="center"
+                    android:textColor="#C3BA4C"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nombre"
+                    android:textColor="#505050"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ingresa el nombre del accidentado:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/Input_Txt_Nombre_Accidentado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Nombre accidentado"
+                    android:textColor="#C8C8C8" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tipo de accidente"
+                    android:textColor="#505050"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_Txt_Nombre_Accidente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Nombre del accidente"
+                    android:textColor="#C8C8C8" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ubicación"
+                    android:textColor="#505050"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ingresa la calle:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/Input_Txt_Calle_Accidentado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="Calle"
+                    android:textColor="#C8C8C8" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ingresa la carrera:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/Input_Txt_Carrera_Accidentado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="Carrera"
+                    android:textColor="#C8C8C8" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bn_Crear_Accidente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/botones_redondos_4"
+
+                    android:text="Crear accidente"
+                    android:textAllCaps="false"
+                    android:textColor="#513D01" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mostrar ambulancia"
+                    android:textAlignment="center"
+                    android:textColor="#C3BA4C"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Te informamos el código de la ambulacia que atenderá tu caso:" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/Show_codigo_Ambulancia_Cercada"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#303030"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/border_text_view"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bn_Mostrar_Codigo_Ambulancia_Asignada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/botones_redondos_4"
+                    android:text="Mostrar código ambulancia"
+                    android:textAllCaps="false"
+                    android:textColor="#513D01" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

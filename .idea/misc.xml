@@ -4,9 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable-v24/botones_redondos.xml" value="0.24" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable-v24/botones_redondos_2.xml" value="0.296" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable-v24/botones_redondos_3.xml" value="0.296" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable-v24/botones_redondos_4.xml" value="0.296" />
         <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1075" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable/border_text_view.xml" value="0.295" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable/botones_redondos_5.xml" value="0.296" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable/botones_redondos_6.xml" value="0.296" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable/ic_icono_reto_ambulancia_02.xml" value="0.3275" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable/ic_icono_reto_ambulancia_02_02.xml" value="0.296" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable/ic_icono_reto_ambulancia_mesa_de_trabajo_1.xml" value="0.3275" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable/ic_icono_reto_ambulancia_mesa_de_trabajo_1_mesa_de_trabajo_1.xml" value="0.296" />
         <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1075" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/layout/activity_actualizar_informacion_ambulancia.xml" value="0.33" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/layout/activity_dar_de_alta_paciente.xml" value="0.2921875" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/layout/activity_ingresar_informacion_accidente.xml" value="0.2921875" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/layout/activity_ingresar_informacion_ambulancia.xml" value="0.33" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/layout/activity_ingresar_informacion_hospital.xml" value="0.33" />
         <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/alexc/3D Objects/urgencia/app/src/main/res/layout/activity_mostrar_informacion.xml" value="0.2921875" />
       </map>
     </option>
   </component>

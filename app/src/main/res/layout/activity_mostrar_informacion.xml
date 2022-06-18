@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="702dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:animateLayoutChanges="false"
+            android:scrollbarSize="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Bn_back"
+                        android:layout_width="39dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+                    <TextView
+                        android:id="@+id/Txt_Categoria_Informacion_Mostrar_Informacion"
+                        android:layout_width="260dp"
+                        android:layout_height="65dp"
+                        android:gravity="center_vertical"
+                        android:text="Mostrar información"
+                        android:textAlignment="center"
+                        android:textColor="#505050"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <Space
+                        android:layout_width="59dp"
+                        android:layout_height="28dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/botones_redondos_5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+
+                    tools:srcCompat="@drawable/ic_icono_reto_ambulancia_05_05" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mostrar toda la información"
+                    android:textAlignment="center"
+                    android:textColor="#8759DA"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ambulancias"
+                            android:textAlignment="center"
+                            android:textColor="#393939"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <ListView
+                            android:id="@+id/List_Ambulancias_Total"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_weight="1" >
+
+                        </ListView>
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Hospitales"
+                            android:textAlignment="center"
+                            android:textColor="#393939"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <ListView
+                            android:id="@+id/List_Hospitales_Total"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                        </ListView>
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ambulancias libres"
+                            android:textAlignment="center"
+                            android:textColor="#393939"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <ListView
+                            android:id="@+id/List_Ambulancias_Libres_Total"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                        </ListView>
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ambulancias ocupadas"
+                            android:textAlignment="center"
+                            android:textColor="#393939"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <ListView
+                            android:id="@+id/List_Ambulancias_Ocupadas_Total"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                        </ListView>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mostrar pacientes por código"
+                            android:textAlignment="center"
+                            android:textColor="#393939"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ingrese el código del hospital"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/Input_Txt_Codigo_Hospital_Busqueda_Paciente"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:text="Código hospital" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/Show_Pacientes_Nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:textColor="#303030"
+                            android:textSize="26sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/border_text_view"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mostrar información de un hospital"
+                            android:textAlignment="center"
+                            android:textColor="#393939"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ingrese el código del hospital"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/Input_Txt_Codigo_Hospital_Busqueda_Informacion_Hospital"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:text="Código hospital" />
+
+                        <TextView
+                            android:id="@+id/Show_Informacion_De_Un_Hospital"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_text_view"
+                            android:textAlignment="center"
+                            android:textColor="#303030"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
