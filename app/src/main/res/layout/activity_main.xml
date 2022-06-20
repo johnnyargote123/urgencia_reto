@@ -77,6 +77,7 @@
                         android:layout_gravity="right"
                         android:translationX="0dp"
                         android:translationY="20dp"
+                        android:src="@drawable/ic_icono_reto_ambulancia_mesa_de_trabajo_1_mesa_de_trabajo_1"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_mesa_de_trabajo_1_mesa_de_trabajo_1" />
 
                     <TextView
@@ -125,7 +126,7 @@
                         android:layout_gravity="right"
                         android:translationX="0dp"
                         android:translationY="20dp"
-                        android:visibility="visible"
+                        android:src="@drawable/ic_icono_reto_ambulancia_02_02"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_02_02" />
 
                     <TextView
@@ -173,6 +174,7 @@
                         android:layout_gravity="right"
                         android:translationX="0dp"
                         android:translationY="20dp"
+                        android:src="@drawable/ic_icono_reto_ambulancia_03"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_03" />
 
                     <TextView
@@ -221,6 +223,7 @@
                         android:layout_gravity="right"
                         android:translationX="0dp"
                         android:translationY="20dp"
+                        android:src="@drawable/ic_icono_reto_ambulancia_04"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_04" />
 
                     <TextView
@@ -271,6 +274,7 @@
                         android:layout_gravity="right"
                         android:translationX="0dp"
                         android:translationY="20dp"
+                        android:src="@drawable/ic_icono_reto_ambulancia_06_06"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_06_06" />
 
                     <TextView
@@ -319,6 +323,7 @@
                         android:layout_gravity="right"
                         android:translationX="0dp"
                         android:translationY="20dp"
+                        android:src="@drawable/ic_icono_reto_ambulancia_05_05"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_05_05" />
 
                     <TextView
