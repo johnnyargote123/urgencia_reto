@@ -68,7 +68,12 @@
                     android:layout_marginBottom="40dp"
                     app:cardBackgroundColor="#328BE0"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
+
 
                     <ImageView
                         android:id="@+id/imageView"
@@ -117,7 +122,11 @@
                     android:layout_marginBottom="40dp"
                     app:cardBackgroundColor="#61CDE9"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
 
                     <ImageView
                         android:id="@+id/imageView_Two"
@@ -165,7 +174,11 @@
                     android:layout_marginBottom="40dp"
                     app:cardBackgroundColor="#9BD093"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
 
                     <ImageView
                         android:id="@+id/imageView_Tree"
@@ -214,7 +227,11 @@
                     android:layout_marginBottom="40dp"
                     app:cardBackgroundColor="#e5dd79"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
 
                     <ImageView
                         android:id="@+id/imageView_fourt"
@@ -261,11 +278,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
                     android:layout_marginBottom="40dp"
-                    android:clickable="true"
-                    android:focusable="true"
                     app:cardBackgroundColor="#F46B9A"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
 
                     <ImageView
                         android:id="@+id/imageView_six"
@@ -314,7 +333,11 @@
                     android:layout_marginBottom="40dp"
                     app:cardBackgroundColor="#8759DA"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    >
 
                     <ImageView
                         android:id="@+id/imageView_five"
