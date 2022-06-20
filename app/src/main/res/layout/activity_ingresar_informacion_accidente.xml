@@ -128,9 +128,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Nombre accidentado"
                     android:inputType="text"
-                    android:text="Nombre accidentado"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <TextView
                     android:id="@+id/textView13"
@@ -148,9 +148,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Nombre accidente"
                     android:inputType="text"
-                    android:text="Nombre del accidente"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -186,9 +186,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Calle"
                     android:inputType="number"
-                    android:text="Calle"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -204,9 +204,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Carrera"
                     android:inputType="number"
-                    android:text="Carrera"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <Space
                     android:layout_width="match_parent"

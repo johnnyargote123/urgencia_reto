@@ -128,9 +128,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Código"
                     android:inputType="number"
-                    android:text="Código"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -166,8 +166,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Nombre hospital"
                     android:inputType="textPersonName"
-                    android:text="Nombre hospital"
                     android:textColor="#C8C8C8" />
 
                 <Space
@@ -204,9 +204,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Calle"
                     android:inputType="number"
-                    android:text="Calle"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -222,9 +222,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Carrera"
                     android:inputType="number"
-                    android:text="Carrera"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -260,9 +260,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Accidente #1"
                     android:inputType="text"
-                    android:text="Accidente #1"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -283,9 +283,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Accidente #2"
                     android:inputType="text"
-                    android:text="Accidente #2"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <Space
                     android:layout_width="match_parent"

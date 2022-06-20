@@ -128,9 +128,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Nuevo código"
                     android:inputType="number"
-                    android:text="Nuevo código"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -166,9 +166,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="Nombre paciente"
                     android:inputType="text"
-                    android:text="Nombre paciente"
-                    android:textColor="#C8C8C8" />
+                    android:textColor="#505050" />
 
                 <Space
                     android:layout_width="match_parent"

@@ -20,8 +20,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:animateLayoutChanges="false"
             android:scrollbarSize="0dp">
 
@@ -96,8 +96,8 @@
 
                     <TextView
                         android:id="@+id/header_text_card_ambulancia"
-                        android:layout_width="112dp"
-                        android:layout_height="39dp"
+                        android:layout_width="158dp"
+                        android:layout_height="59dp"
                         android:gravity="left"
                         android:text="Información de la ambulacia"
                         android:textColor="#FFFFFF"
@@ -125,6 +125,7 @@
                         android:layout_gravity="right"
                         android:translationX="0dp"
                         android:translationY="20dp"
+                        android:visibility="visible"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_02_02" />
 
                     <TextView
@@ -143,8 +144,8 @@
 
                     <TextView
                         android:id="@+id/header_subtitle_card_nuevo_hospital"
-                        android:layout_width="135dp"
-                        android:layout_height="60dp"
+                        android:layout_width="173dp"
+                        android:layout_height="80dp"
                         android:gravity="left"
                         android:text="Información de un nuevo hospital al sistema."
                         android:textColor="#FFFFFF"
@@ -191,7 +192,7 @@
 
                     <TextView
                         android:id="@+id/header_subtitle_actualizar_card_ambulancia"
-                        android:layout_width="138dp"
+                        android:layout_width="173dp"
                         android:layout_height="60dp"
                         android:gravity="left"
                         android:text="La información de una ambulancia"
@@ -211,9 +212,7 @@
                     android:layout_marginBottom="40dp"
                     app:cardBackgroundColor="#e5dd79"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp"
-
-                    >
+                    app:cardElevation="20dp">
 
                     <ImageView
                         android:id="@+id/imageView_fourt"
@@ -259,11 +258,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
                     android:layout_marginBottom="40dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardBackgroundColor="#F46B9A"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp"
-
-                    >
+                    app:cardElevation="20dp">
 
                     <ImageView
                         android:id="@+id/imageView_six"
@@ -311,7 +310,6 @@
                     android:layout_marginBottom="40dp"
                     app:cardBackgroundColor="#8759DA"
                     app:cardCornerRadius="10dp"
-
                     app:cardElevation="20dp">
 
                     <ImageView
