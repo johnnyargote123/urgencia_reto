@@ -97,13 +97,37 @@ class Accidentado : Comparable<Accidentado> {
 class Ambulancia {
 
     //region Atributos
+    var codigoAmbulancia: Int = 0
     var accidentado: Accidentado? = null
     var ocupado: Boolean = false
+    var ubicacion = Ubicacion()
+    //endregion
+
+    //region Constructores
+    constructor()
+
+    constructor(
+        codigoAmbulancia: Int,
+        accidentado: Accidentado?,
+        ocupado: Boolean,
+        ubicacion: Ubicacion
+    ) {
+        this.codigoAmbulancia = codigoAmbulancia
+        this.accidentado = accidentado
+        this.ocupado = ocupado
+        this.ubicacion = ubicacion
+    }
+
+
     //endregion
 
     //region Analizadoras y modificadoras
     fun darAccidentado() = this.accidentado
     fun darOcupado() = this.ocupado
+
+    fun darCodigo() = this.codigoAmbulancia
+
+    fun darUbicacion() = this.ubicacion
 
     fun modificarAccidentado(n_accidentado: Accidentado?) {
         this.accidentado = n_accidentado
@@ -112,6 +136,15 @@ class Ambulancia {
     fun modificarOcupado(n_ocupado: Boolean) {
         this.ocupado = n_ocupado
     }
+
+    fun modificarCodigo(n_codigo: Int) {
+        this.codigoAmbulancia = n_codigo
+    }
+
+    fun modificarUbicacion(n_ubicacion: Ubicacion) {
+        this.ubicacion = n_ubicacion
+    }
+
     //endregion
 
     //region Funciones Internas
@@ -151,13 +184,13 @@ class Hospital : Comparable<Hospital> {
 
     constructor(
         codigoHospital: Int, nombreHospital: String, tipoAccidenteUno: String,
-        tipoAccidenteDos: String, listaPacientes: TArrayList<Accidentado>, ubicacion: Ubicacion
+        tipoAccidenteDos: String, listaPacientes: TArrayList<Accidentado>?, ubicacion: Ubicacion
     ) {
         this.codigoHospital = codigoHospital
         this.nombreHospital = nombreHospital
         this.tipoAccidenteUno = tipoAccidenteUno
         this.tipoAccidenteDos = tipoAccidenteDos
-        this.listaPacientes = listaPacientes
+        this.listaPacientes = listaPacientes!!
         this.ubicacion = ubicacion
     }
     //endregion
@@ -232,6 +265,154 @@ class Hospital : Comparable<Hospital> {
 
 }
 
+//endregion
+
+//region singeton
+object SistemaUrgencias {
+
+    //region Atibutos
+    var listaHospitales = TArrayList<Hospital>()
+    var listaAmbulacias = TArrayList<Ambulancia>()
+    //endregion
+
+    //region funciones propias
+
+    fun agregarAmbulancia(codigo: Int, calle: Int, carrera: Int) {
+
+        fun verificarAmbulancia(codigo: Int): Boolean {
+            for (codigoLista in listaAmbulacias) {
+                if (codigoLista.darCodigo() == codigo) return true
+            }
+            return false
+        }
+
+        val verificacion = verificarAmbulancia(codigo)
+
+        if (!verificacion) listaAmbulacias.add(
+            Ambulancia(
+                codigo,
+                null,
+                false,
+                Ubicacion(carrera, calle)
+            )
+        )
+
+    }
+
+    fun agregarHospital(
+        codigo: Int, nombreHospital: String, calle: Int, carrera: Int,
+        tipoAccidente: String, tipoAccidenteDos: String
+    ) {
+
+        fun verificarHospital(codigo: Int): Boolean {
+            for (codigoLista in listaHospitales) {
+                if (codigoLista.darCodigoHospital() == codigo) return true
+            }
+            return false
+        }
+
+        val verificacion = verificarHospital(codigo)
+
+        if (!verificacion) listaHospitales.add(
+            Hospital(
+                codigo, nombreHospital, tipoAccidente, tipoAccidenteDos, null,
+                Ubicacion(carrera, calle)
+            )
+        )
+
+    }
+
+    fun obtenerAmbulanciaCercana(accidentado: Accidentado): Ambulancia? {
+
+        val ambulanciasDesocupadas = listaAmbulacias.filter { !it.darOcupado() }
+
+        if (ambulanciasDesocupadas.size() == 0) return null
+        else {
+            var ambulancia = ambulanciasDesocupadas[0]
+            for (p in 1 until listaAmbulacias.size) {
+
+                if (distancia(
+                        accidentado.darUbicacion(),
+                        ambulanciasDesocupadas[p].darUbicacion()
+                    ) <
+                    distancia(accidentado.darUbicacion(), ambulancia.darUbicacion())
+                ) {
+                    ambulancia = ambulanciasDesocupadas[p]
+                }
+
+            }
+
+            return ambulancia
+
+        }
+
+
+    }
+
+    fun cambiarUbicacionAmbulancia(codigoAmbulancia: Int, ubicacion: Ubicacion) {
+        val ambulancia = listaAmbulacias.find { it.codigoAmbulancia == codigoAmbulancia }
+
+        if (ambulancia?.darOcupado() == false)
+            ambulancia.modificarUbicacion(ubicacion)
+    }
+
+    fun asignarAccidentado(ambulancia: Ambulancia, accidentado: Accidentado) {
+
+        if (!ambulancia.darOcupado()) {
+            ambulancia.modificarAccidentado(accidentado)
+            ambulancia.modificarOcupado(true)
+        }
+    }
+
+    fun busquedaHospital(ambulancia: Ambulancia): Hospital? {
+        require(ambulancia.darOcupado())
+
+        val hospitalesConEspecialidaes = listaHospitales.filter {
+            it.darTipoAccidenteUno() == ambulancia.darAccidentado()!!.darMotivo()
+                    || it.darTipoAccidenteDos() == ambulancia.darAccidentado()!!.darMotivo()
+        }
+
+        if (hospitalesConEspecialidaes.size() == 0) return null
+        else {
+            var hospitalUno = listaHospitales[0]
+
+            for (p in 1 until listaHospitales.size) {
+
+                if (distancia(
+                        ambulancia.darUbicacion(),
+                        hospitalesConEspecialidaes[p].darUbicacion()
+                    ) <
+                    distancia(hospitalUno.darUbicacion(), ambulancia.darUbicacion())
+                ) {
+                    hospitalUno = listaHospitales[p]
+                }
+
+            }
+            return hospitalUno
+        }
+
+
+    }
+
+
+    fun registroLlegadaHospital(ambulancia: Ambulancia) {
+        require(ambulancia.darOcupado())
+        val hospitalCarcano = busquedaHospital(ambulancia)
+
+        cambiarUbicacionAmbulancia(ambulancia.darCodigo(), hospitalCarcano!!.darUbicacion())
+        ambulancia.modificarOcupado(false)
+        hospitalCarcano.ingresarPaciente(ambulancia.darAccidentado()!!)
+    }
+
+
+    fun darDeAltaAccidentado(codigoHospital: Int, nombrePaciente: String) {
+        val hospital = listaHospitales.find { it.codigoHospital == codigoHospital }
+        hospital!!.darAltaPaciente(nombrePaciente)
+    }
+
+    //endregion
+
+}
 //endregion
 
 //region Funciones Externas
