@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="410dp"
-        android:layout_height="702dp"
+        android:layout_height="870dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +75,7 @@
                     android:background="@drawable/botones_redondos_4"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
-
+                    android:src="@drawable/ic_icono_reto_ambulancia_04"
                     tools:srcCompat="@drawable/ic_icono_reto_ambulancia_04" />
 
                 <Space
@@ -96,7 +96,7 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="33dp"
+                    android:layout_height="55dp"
                     android:layout_weight="1" />
 
                 <TextView
@@ -131,6 +131,11 @@
                     android:hint="Nombre accidentado"
                     android:inputType="text"
                     android:textColor="#505050" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_weight="1" />
 
                 <TextView
                     android:id="@+id/textView13"
@@ -190,6 +195,11 @@
                     android:inputType="number"
                     android:textColor="#505050" />
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_weight="1" />
+
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
@@ -218,7 +228,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botones_redondos_4"
-
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:text="Crear accidente"
                     android:textAllCaps="false"
                     android:textColor="#513D01" />
@@ -261,11 +271,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="1"
+                    android:background="@drawable/border_text_view"
                     android:textAlignment="center"
                     android:textColor="#303030"
                     android:textSize="26sp"
-                    android:textStyle="bold"
-                    android:background="@drawable/border_text_view"/>
+                    android:textStyle="bold" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -277,11 +287,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:background="@drawable/botones_redondos_4"
                     android:text="Mostrar código ambulancia"
                     android:textAllCaps="false"
                     android:textColor="#513D01" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_weight="1" />
 
                 <Space
                     android:layout_width="match_parent"

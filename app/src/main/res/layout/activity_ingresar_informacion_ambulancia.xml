@@ -8,8 +8,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="702dp"
+        android:layout_width="413dp"
+        android:layout_height="870dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +75,7 @@
                     android:background="@drawable/botones_redondos"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
-
+                    android:src="@drawable/ic_icono_reto_ambulancia_mesa_de_trabajo_1_mesa_de_trabajo_1"
                     tools:srcCompat="@drawable/ic_icono_reto_ambulancia_mesa_de_trabajo_1_mesa_de_trabajo_1" />
 
                 <Space
@@ -96,7 +96,7 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="33dp"
+                    android:layout_height="54dp"
                     android:layout_weight="1" />
 
                 <TextView
@@ -111,7 +111,7 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="11dp"
+                    android:layout_height="21dp"
                     android:layout_weight="1" />
 
                 <TextView
@@ -149,7 +149,7 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="16dp"
+                    android:layout_height="21dp"
                     android:layout_weight="1" />
 
                 <TextView
@@ -169,6 +169,11 @@
                     android:hint="Calle"
                     android:inputType="number"
                     android:textColor="#505050" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_weight="1" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -198,10 +203,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botones_redondos"
-
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:text="Agregar Ambulancia"
                     android:textAllCaps="false"
                     android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1" />
 
             </LinearLayout>
         </ScrollView>

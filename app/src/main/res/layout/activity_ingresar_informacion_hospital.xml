@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="410dp"
-        android:layout_height="702dp"
+        android:layout_height="870dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +75,7 @@
                     android:background="@drawable/botones_redondos_2"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
-
+                    android:src="@drawable/ic_icono_reto_ambulancia_02_02"
                     tools:srcCompat="@drawable/ic_icono_reto_ambulancia_02_02" />
 
                 <Space
@@ -96,7 +96,7 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="33dp"
+                    android:layout_height="54dp"
                     android:layout_weight="1" />
 
                 <TextView
@@ -208,6 +208,11 @@
                     android:inputType="number"
                     android:textColor="#505050" />
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:layout_weight="1" />
+
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
@@ -234,7 +239,7 @@
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="33dp"
                     android:layout_weight="1"
                     android:text="Accidentes"
                     android:textColor="#505050"
@@ -297,14 +302,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botones_redondos_2"
-
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:text="Agregar Hospital"
                     android:textAllCaps="false"
                     android:textColor="#FFFFFF" />
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="44dp"
+                    android:layout_height="143dp"
                     android:layout_weight="1" />
 
             </LinearLayout>

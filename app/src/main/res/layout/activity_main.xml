@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="381dp"
-        android:layout_height="702dp"
+        android:layout_height="870dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,13 +66,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
                     android:layout_marginBottom="40dp"
-                    app:cardBackgroundColor="#328BE0"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    >
+                    app:cardBackgroundColor="#328BE0"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
 
 
                     <ImageView
@@ -80,9 +79,9 @@
                         android:layout_width="151dp"
                         android:layout_height="111dp"
                         android:layout_gravity="right"
+                        android:src="@drawable/ic_icono_reto_ambulancia_mesa_de_trabajo_1_mesa_de_trabajo_1"
                         android:translationX="0dp"
                         android:translationY="20dp"
-                        android:src="@drawable/ic_icono_reto_ambulancia_mesa_de_trabajo_1_mesa_de_trabajo_1"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_mesa_de_trabajo_1_mesa_de_trabajo_1" />
 
                     <TextView
@@ -120,22 +119,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
                     android:layout_marginBottom="40dp"
-                    app:cardBackgroundColor="#61CDE9"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    >
+                    app:cardBackgroundColor="#61CDE9"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
 
                     <ImageView
                         android:id="@+id/imageView_Two"
                         android:layout_width="151dp"
                         android:layout_height="111dp"
                         android:layout_gravity="right"
+                        android:src="@drawable/ic_icono_reto_ambulancia_02_02"
                         android:translationX="0dp"
                         android:translationY="20dp"
-                        android:src="@drawable/ic_icono_reto_ambulancia_02_02"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_02_02" />
 
                     <TextView
@@ -172,22 +170,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
                     android:layout_marginBottom="40dp"
-                    app:cardBackgroundColor="#9BD093"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    >
+                    app:cardBackgroundColor="#9BD093"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
 
                     <ImageView
                         android:id="@+id/imageView_Tree"
                         android:layout_width="151dp"
                         android:layout_height="111dp"
                         android:layout_gravity="right"
+                        android:src="@drawable/ic_icono_reto_ambulancia_03"
                         android:translationX="0dp"
                         android:translationY="20dp"
-                        android:src="@drawable/ic_icono_reto_ambulancia_03"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_03" />
 
                     <TextView
@@ -225,22 +222,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
                     android:layout_marginBottom="40dp"
-                    app:cardBackgroundColor="#e5dd79"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    >
+                    app:cardBackgroundColor="#e5dd79"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
 
                     <ImageView
                         android:id="@+id/imageView_fourt"
                         android:layout_width="151dp"
                         android:layout_height="111dp"
                         android:layout_gravity="right"
+                        android:src="@drawable/ic_icono_reto_ambulancia_04"
                         android:translationX="0dp"
                         android:translationY="20dp"
-                        android:src="@drawable/ic_icono_reto_ambulancia_04"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_04" />
 
                     <TextView
@@ -278,22 +274,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
                     android:layout_marginBottom="40dp"
-                    app:cardBackgroundColor="#F46B9A"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    >
+                    app:cardBackgroundColor="#F46B9A"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
 
                     <ImageView
                         android:id="@+id/imageView_six"
                         android:layout_width="151dp"
                         android:layout_height="111dp"
                         android:layout_gravity="right"
+                        android:src="@drawable/ic_icono_reto_ambulancia_06_06"
                         android:translationX="0dp"
                         android:translationY="20dp"
-                        android:src="@drawable/ic_icono_reto_ambulancia_06_06"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_06_06" />
 
                     <TextView
@@ -331,22 +326,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
                     android:layout_marginBottom="40dp"
-                    app:cardBackgroundColor="#8759DA"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="20dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    >
+                    app:cardBackgroundColor="#8759DA"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
 
                     <ImageView
                         android:id="@+id/imageView_five"
                         android:layout_width="151dp"
                         android:layout_height="111dp"
                         android:layout_gravity="right"
+                        android:src="@drawable/ic_icono_reto_ambulancia_05_05"
                         android:translationX="0dp"
                         android:translationY="20dp"
-                        android:src="@drawable/ic_icono_reto_ambulancia_05_05"
                         tools:srcCompat="@drawable/ic_icono_reto_ambulancia_05_05" />
 
                     <TextView
@@ -378,6 +372,10 @@
 
 
                 </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
             </LinearLayout>
         </ScrollView>
 

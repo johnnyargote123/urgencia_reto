@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="410dp"
-        android:layout_height="702dp"
+        android:layout_height="870dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +75,7 @@
                     android:background="@drawable/botones_redondos_3"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
-
+                    android:src="@drawable/ic_icono_reto_ambulancia_03"
                     tools:srcCompat="@drawable/ic_icono_reto_ambulancia_03" />
 
                 <Space
@@ -96,7 +96,7 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="33dp"
+                    android:layout_height="54dp"
                     android:layout_weight="1" />
 
                 <TextView
@@ -170,6 +170,11 @@
                     android:inputType="number"
                     android:textColor="#505050" />
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_weight="1" />
+
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
@@ -190,7 +195,7 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="34dp"
+                    android:layout_height="25dp"
                     android:layout_weight="1" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -198,10 +203,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botones_redondos_3"
-
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:text="Actualizar Ambulancia"
                     android:textAllCaps="false"
                     android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1" />
 
             </LinearLayout>
         </ScrollView>
